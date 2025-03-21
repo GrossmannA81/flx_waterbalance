@@ -24,7 +24,7 @@
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script>
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -55,7 +55,7 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
-        
+
       </ul>
 </div>
 <!--/.nav-collapse -->
@@ -64,13 +64,14 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
 <div class="page-header"><h1 id="the-geco-r-project-template">The GECO R project template<a class="anchor" aria-label="anchor" href="#the-geco-r-project-template"></a>
 </h1></div>
+<p>Hoi.</p>
 <p>This is a github template for a GECO R project repository. This template can be loaded when creating a new project in github. As such you pre-populate a project with a standard set of directories. This ensures a project-oriented and consistent workflow across all lab members, and removes some of the mental overhead in making decisions on a project structure.</p>
 <p>It must be noted that some of the functionality as provided by this setup is included in the <a href="https://usethis.r-lib.org/" class="external-link"><code>usethis</code></a> R package, the aim is slightly different. For one, <code>usethis</code> is aimed at populating a package structure. Second, there is not preset full template, hence many individual decisions still need to be made and code executed. This is bypassed by this setup.</p>
 <div class="section level2">
@@ -90,7 +91,7 @@
 </h3>
 <p>The new repository will be created and populated with the files of the template. You can then clone the project to your local computer to add files.</p>
 <p>Although optional it is wise to rename the <code>*.Proj</code> file as this will not automatically change to your repository name. However, retaining the original name should not change any of the functionality.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:USER/YOUR_PROJECT.git</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:USER/YOUR_PROJECT.git</span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -104,7 +105,7 @@
 </ul>
 </li>
 <li>Avoids top level aggregation of data, code and reporting files</li>
-<li>Splits the dynamic reporting from academic writing (<code>vignettes</code> vs. <code>manuscript</code>)</li>
+<li>Splits the dynamic reporting from academic writing (<code>vignettes</code> vs. <code>manuscript</code>)</li>
 <li>Splits pre-processing of data from working / included data (<code>data-raw</code> vs. <code>data</code>)</li>
 <li>Splits R code from other scripts (bash / python in <code>src</code>)</li>
 <li>Splits R functions from R analysis scripts (<code>R</code> vs <code>analysis</code>)</li>
@@ -159,7 +160,7 @@
 <h3 id="the-analysis-folder">The analysis folder<a class="anchor" aria-label="anchor" href="#the-analysis-folder"></a>
 </h3>
 <p>The <code>analysis</code> folder contains, <em>surprise</em>, R scripts covering analysis of your analysis ready data (in the <code>data</code> folder). These are R scripts with output which is limited to numbers, tables and figures. It should not include R markdown code!</p>
-<p>It is often helpful to create additional sub-folders for statistics and figures, especially if figures are large and complex (i.e. visualizations, rather than graphical representations of statistical properties, such as maps).</p>
+<p>It is often helpful to create additional sub-folders for statistics and figures, especially if figures are large and complex (i.e. visualizations, rather than graphical representations of statistical properties, such as maps).</p>
 <p>Scripts can have a numbered prefix to indicate an order of execution, but this is generally less important as you will work on analysis ready data. If there is carry over between analysis, either merge the two files or use numbered prefixes.</p>
 <pre><code>analysis/
 ├─ statistics/
@@ -282,10 +283,10 @@
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>
